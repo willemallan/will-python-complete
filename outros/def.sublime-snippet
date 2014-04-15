@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+def ${1:nome_function}(request):
+
+    VARS = {
+        '${2:var}':${2:var},
+    }
+
+    return render_to_response('${3:pagina}.html', VARS, context_instance=RequestContext(request))
+]]></content>
+	<tabTrigger>def</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

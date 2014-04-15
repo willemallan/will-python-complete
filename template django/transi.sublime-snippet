@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+{% load i18n %}
+
+{% trans '$1' %}
+]]></content>
+	<tabTrigger>transl</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>Tradução texto estático com load i18n</description>
+</snippet>

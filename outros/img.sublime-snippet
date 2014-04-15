@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+from sorl.thumbnail import ImageField
+img = ImageField(u'Imagem', upload_to=rename_file_and_upload_to, max_length=255)
+
+def imagemAdmin(self):
+    from sorl.thumbnail import get_thumbnail
+    if self.img:
+        try:
+            im = get_thumbnail(self.img, '100x70', quality=80)
+            return '<img src="{0}" />'.format(im.url)
+        except:
+            return ''
+    return ''
+imagemAdmin.is_safe = True
+imagemAdmin.allow_tags = True
+imagemAdmin.short_description = u'Imagem'
+
+]]></content>
+	<tabTrigger>img</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

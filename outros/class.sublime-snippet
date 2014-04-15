@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+class ${1:ClassName}(models.Model):
+
+    ${2:nome} = models.CharField(max_length=255)
+    $3
+
+    class Meta:
+        ordering = ('${2:nome}', )
+        verbose_name = '${1:ClassName}'
+        verbose_name_plural = '${1:ClassName}s'
+
+    def __unicode__(self):
+        return self.${2:nome}
+
+    def url(self):
+        return reverse('url_Model', args=(self.slug,))
+]]></content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

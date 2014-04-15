@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+from colorfield.fields import ColorField
+${1:color} = ColorField(default='ffffff')
+]]></content>
+	<tabTrigger>color</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

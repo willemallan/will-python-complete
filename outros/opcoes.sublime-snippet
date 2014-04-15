@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+${1:ClassName}_choices = (
+    (u'_blank', u'Abrir o link em uma nova janela'),
+    (u'_self', u'Abrir o link na mesma janela'),
+)
+
+${1:ClassName} = models.CharField(max_length=255, choices=${1:ClassName}_choices, blank=True, null=True)
+]]></content>
+	<tabTrigger>opcoes</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

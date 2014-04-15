@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+# -*- coding: utf-8 -*-
+from django.db import models
+
+
+class ${1:ClassName}(models.Model):
+    """
+    Stores values for ``pote.conf`` that can be edited via the admin.
+    """
+    ${4:campo} = models.${5:CharField}(max_length=255)
+    $6
+    
+    class Meta:
+        verbose_name = u'$2'
+        verbose_name_plural = u'$3'
+        
+    def __unicode__(self):
+        return "%s" % self.${4:campo}
+        ]]></content>
+    <tabTrigger>classi</tabTrigger>
+    <scope>source.python</scope>
+    <description>model do django com imports</description>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+null=True, blank=True]]></content>
+    <tabTrigger>null</tabTrigger>
+    <scope>source.python</scope>
+    <description>model django</description>
+</snippet>

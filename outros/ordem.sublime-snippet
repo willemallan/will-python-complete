@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+ordem = models.PositiveIntegerField(verbose_name='Ordenação', blank=True, null=True)
+
+]]></content>
+	<tabTrigger>ordem</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+from tinymce import models as tinymce_models
+${1:ClassName} = tinymce_models.HTMLField(null=True, blank=True)
+]]></content>
+	<tabTrigger>texto2</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

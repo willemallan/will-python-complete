@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+from sorl.thumbnail import ImageField
+img = ImageField(u'Imagem', upload_to=rename_file_and_upload_to, max_length=255)
+
+def imagemAdmin(self):
+    from sorl.thumbnail import get_thumbnail
+    if self.img:
+        try:
+            im = get_thumbnail(self.img,'100x70',quality=80)
+            return '<img src="{0}" />'.format(im.url)
+        except:
+            return ''
+    return ''
+imagemAdmin.is_safe = True
+imagemAdmin.allow_tags = True
+imagemAdmin.short_description = u'Imagem'
+
+def rename_file_and_upload_to(objeto, arquivo):
+    """
+    Essa função irá normalizar como um slug, o nome do arquivo que está sendo gravado e, irá gravá-lo
+    em /media/uploads/APPNAME_CLASSNAME/nome_do_arquivo_normalizado.extensao
+    """
+    import os
+    caminho = str('%s_%s' % (objeto._meta.app_label, objeto.__class__.__name__) ).lower()
+    nome, ext = os.path.splitext(arquivo)
+    url = slugify(nome)
+    return os.path.join('',caminho,url+ext)
+
+]]></content>
+	<tabTrigger>img2</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+${1:campo} = models.CharField(max_length=${2:255}, )]]></content>
+    <tabTrigger>char</tabTrigger>
+    <scope>source.python</scope>
+    <description>model django</description>
+</snippet>

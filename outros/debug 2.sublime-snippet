@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+print "################################"
+print "%s" % ${1:valor}
+print "################################"
+]]></content>
+	<tabTrigger>debug</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

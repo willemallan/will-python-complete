@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1:criado} = models.DateTimeField(auto_now_add=True)
+        ]]></content>
+    <tabTrigger>datetime</tabTrigger>
+    <scope>source.python</scope>
+    <description>criação</description>
+</snippet>

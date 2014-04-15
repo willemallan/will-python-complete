@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+cliques = models.PositiveIntegerField(verbose_name='Cliques', default=0)
+]]></content>
+	<tabTrigger>cliques</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

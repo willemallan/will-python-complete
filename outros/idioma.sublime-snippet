@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+idioma = models.CharField(max_length=10, choices=settings.LANGUAGES)
+]]></content>
+	<tabTrigger>idioma</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

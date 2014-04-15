@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+class $0Inline(admin.TabularInline):
+    model = $0
+    extra = 4
+]]></content>
+	<tabTrigger>inline</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

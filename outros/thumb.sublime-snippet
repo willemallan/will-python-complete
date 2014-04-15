@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+def imagemAdmin(self):
+    from sorl.thumbnail import get_thumbnail
+    if self.img:
+        im = get_thumbnail(self.img, '100x70', quality=99)
+        try:
+            return '<img src="{0}" />'.format(im.url)
+        except:
+            return ''
+    return ''
+imagemAdmin.is_safe = True
+imagemAdmin.allow_tags = True
+imagemAdmin.short_description = u'Imagem'
+]]></content>
+	<tabTrigger>thumb</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

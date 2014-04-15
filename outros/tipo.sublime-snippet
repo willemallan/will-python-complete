@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+${2:TIPO} = (
+        ('$3', '$4'),
+        ('$5', '$6'),
+    )
+
+${1:tipo} = models.CharField(max_length=255, choices=${2:TIPO})
+]]></content>
+	<tabTrigger>tipo</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

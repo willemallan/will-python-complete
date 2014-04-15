@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+arquivo = models.FileField(u'Arquivo', max_length=255, upload_to=rename_file_and_upload_to)
+
+def rename_file_and_upload_to(objeto, arquivo):
+    """
+    Essa função irá normalizar como um slug, o nome do arquivo que está sendo gravado e, irá gravá-lo
+    em /media/uploads/APPNAME_CLASSNAME/nome_do_arquivo_normalizado.extensao
+    """
+    import os
+    from django.template.defaultfilters import slugify
+    caminho = str('%s_%s' % (objeto._meta.app_label, objeto.__class__.__name__) ).lower()
+    nome, ext = os.path.splitext(arquivo)
+    url = slugify(nome)
+    return os.path.join('', caminho, url+ext)
+]]></content>
+	<tabTrigger>arquivoi</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

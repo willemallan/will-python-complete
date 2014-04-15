@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+$1 = models.CharField(max_length=255${2:, null=True, blank=True})
+]]></content>
+	<tabTrigger>char</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

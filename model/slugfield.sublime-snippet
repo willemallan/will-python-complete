@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+# admin.py
+prepopulated_fields = {"slug": ("${3:nome}",)}
+
+${1:slug} = models.SlugField(max_length=${2:255}, unique=True)]]></content>
+    <tabTrigger>slugfield</tabTrigger>
+    <scope>source.python</scope>
+    <description>model django</description>
+</snippet>

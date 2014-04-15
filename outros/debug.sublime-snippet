@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+print "#######################################"
+print "${1:variavel}: %s" % ${1:variavel}
+print "#######################################"
+]]></content>
+    <tabTrigger>debug</tabTrigger>
+    <scope>source.python</scope>
+    <description>debug</description>
+</snippet>

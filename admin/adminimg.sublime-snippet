@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+class ${1:ClassName}Admin(AdminImageMixin, admin.ModelAdmin):
+    list_display = ('${2:nome}', )
+    search_fields = ('${2:nome}', )
+    #list_filter = ['ativo', ]
+    #readonly_fields = ['cliques', ]
+    save_on_top = True
+    list_per_page = 20
+    $3
+
+admin.site.register(${1:ClassName}, ${1:ClassName}Admin)
+]]></content>
+	<tabTrigger>admin</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

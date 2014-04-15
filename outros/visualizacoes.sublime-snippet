@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+visualizacoes = models.PositiveIntegerField(default=0)
+
+]]></content>
+	<tabTrigger>visualizacoes</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+email = models.EmailField(verbose_name=u'Email', max_length=255)
+]]></content>
+	<tabTrigger>email</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

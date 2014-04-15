@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+${1:arquivo} = ImageField(upload_to='', max_length=${3:255})]]></content>
+    <tabTrigger>imagefield</tabTrigger>
+    <scope>source.python</scope>
+    <description>model django</description>
+</snippet>

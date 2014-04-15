@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+from ibge.models import UnidadeFederativa, Municipio
+cidade = models.ForeignKey(Municipio, verbose_name=u'Cidade')
+]]></content>
+	<tabTrigger>cidade</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+# -*- coding: utf-8 -*-
+from django.contrib import admin
+from models import *
+
+
+class ${1:ClassName}Admin(admin.ModelAdmin):
+	list_display = ('${2:nome}', )
+	search_fields = ('${2:nome}', )
+	#list_filter = ['ativo', ]
+	#list_editable = ['ativo', ]
+	#readonly_fields = ['cliques', ]
+	save_on_top = True
+	list_per_page = 20
+	$3
+
+admin.site.register(${1:ClassName}, ${1:ClassName}Admin)
+]]></content>
+	<tabTrigger>admini</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+{% trans '$1' %}
+]]></content>
+	<tabTrigger>trans</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>Tradução texto estático</description>
+</snippet>

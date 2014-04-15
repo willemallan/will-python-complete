@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+from django.views.generic import TemplateView
+
+url(_(r'^${1:nome_app}/\$'), TemplateView.as_view(template_name='${2:nome_pagina.html}'), name='${3:apelido_url}'),
+        ]]></content>
+    <tabTrigger>urltemplateview</tabTrigger>
+    <scope>source.python</scope>
+    <description>url templateview</description>
+</snippet>

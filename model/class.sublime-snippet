@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+class ${1:ClassName}(models.Model):
+    """
+    Stores values for ``pote.conf`` that can be edited via the admin.
+    """
+    ${4:campo} = models.${5:CharField}(max_length=255)
+    $6
+    
+    class Meta:
+        verbose_name = u'$2'
+        verbose_name_plural = u'$3'
+        
+    def __unicode__(self):
+        return "%s" % self.${4:campo}
+        ]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.python</scope>
+    <description>model do django sem imports</description>
+</snippet>

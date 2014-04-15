@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+{% load thumbnail %}
+{% thumbnail $1 "690x445" crop="center" upscale="true" as im %}
+    <img src="{{ im.url }}" alt="$2">
+{% endthumbnail %}
+]]></content>
+	<tabTrigger>thumbl</tabTrigger>
+    <scope>text.html.django</scope>
+    <description>Thumbnail</description>
+</snippet>

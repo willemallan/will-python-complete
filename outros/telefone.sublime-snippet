@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:telefone} = models.CharField(max_length=30, help_text='(99) 9999-9999')
+]]></content>
+	<tabTrigger>telefone</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:campo} = models.ForeignKey(${2:Class})
+]]></content>
+	<tabTrigger>key</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

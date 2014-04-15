@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+from django.template.defaultfilters import slugify
+
+slug = models.SlugField(max_length=255, unique=True, blank=True, null=True, editable=False)
+
+def save(self):
+    if not self.id:
+        self.slug = slugify(self.${1:nome}).replace('_','')
+        while ${2:Class}.objects.filter(slug=self.slug):
+            self.slug += '-1'
+    super(${2:Class},self).save()
+]]></content>
+	<tabTrigger>slug2</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

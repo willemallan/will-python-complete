@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+url = models.UrlField(max_length=255, verify_exists=False)
+
+]]></content>
+	<tabTrigger>url</tabTrigger>
+	<scope>source.python</scope>
+</snippet>

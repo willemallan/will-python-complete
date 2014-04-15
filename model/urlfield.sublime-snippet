@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+${1:url} = models.URLField(max_length=${2:255})]]></content>
+    <tabTrigger>urlfield</tabTrigger>
+    <scope>source.python</scope>
+    <description>model django</description>
+</snippet>

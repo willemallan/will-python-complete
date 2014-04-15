@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+url(_(r'^${1:nome}/'), '${2:nome_app}.views.${3:nome_def}', name='${4:apelido}'),
+        ]]></content>
+    <tabTrigger>urldef</tabTrigger>
+    <scope>source.python</scope>
+    <description>url def</description>
+</snippet>

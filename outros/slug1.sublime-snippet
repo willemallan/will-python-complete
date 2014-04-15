@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+slug = models.SlugField(max_length=255, unique=True, verbose_name="Slug / URL", help_text="Preenchido automaticamente, não editar.",)
+# admin
+prepopulated_fields = {'slug': ("nome",)}
+]]></content>
+    <tabTrigger>slug1</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

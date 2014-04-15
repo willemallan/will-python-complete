@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1:campo} = models.ForeignKey(${2:Object})
+        ]]></content>
+    <tabTrigger>key</tabTrigger>
+    <scope>source.python</scope>
+    <description>ForeignKey model django</description>
+</snippet>

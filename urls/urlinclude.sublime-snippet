@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+from django.conf.urls import include
+url(_(r'^${1:nome_app}/'), include('${1:nome_app}.urls', namespace='${1:nome_app}')),
+        ]]></content>
+    <tabTrigger>urlinclude</tabTrigger>
+    <scope>source.python</scope>
+    <description>url include app</description>
+</snippet>

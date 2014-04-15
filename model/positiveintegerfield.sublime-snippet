@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+${1:campo} = models.PositiveIntegerField()]]></content>
+    <tabTrigger>positiveintegerfield</tabTrigger>
+    <scope>source.python</scope>
+    <description>model django</description>
+</snippet>

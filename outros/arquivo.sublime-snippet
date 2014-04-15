@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:arquivo} = models.FileField(verbose_name=u'Arquivo', upload_to=U.rename_file_and_upload_to, max_length=255)
+]]></content>
+	<tabTrigger>arquivo</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
